@@ -1,0 +1,27 @@
+# Maven build output
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+*.env
+application-prod.properties
+
+# Logs
+*.log
+
+# H2 database files
+*.db
+*.mv.db
+*.trace.db
