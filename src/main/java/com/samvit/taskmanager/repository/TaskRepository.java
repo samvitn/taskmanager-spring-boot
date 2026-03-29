@@ -10,7 +10,7 @@ import java.util.List;
 //   Task = the entity type this repository manages
 //   Long = the type of Task's primary key (id field)
 //
-// By extending JpaRepository, you get these methods FOR FREE:
+// By extending JpaRepository, we get these methods FOR FREE:
 //   findAll()         → List<Task>         — SELECT * FROM tasks
 //   findById(Long id) → Optional<Task>     — SELECT * FROM tasks WHERE id = ?
 //   save(Task task)   → Task               — INSERT or UPDATE

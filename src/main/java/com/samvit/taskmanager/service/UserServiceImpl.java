@@ -32,10 +32,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserResponseDTO> getAllUsers() {
-        return userRepository.findAll()
-            .stream()
-            .map(this::toResponseDTO)
-            .collect(Collectors.toList());
+        return userRepository.findAllWithTasks()   // NOT findAll()
+                .stream()
+                .map(this::toResponseDTO)
+                .collect(Collectors.toList());
     }
 
     @Override
