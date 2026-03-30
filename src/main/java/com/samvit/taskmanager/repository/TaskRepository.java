@@ -27,6 +27,9 @@ public interface TaskRepository extends JpaRepository<Task, Long> {
     // findByStatus("done") → SELECT * FROM tasks WHERE status = 'done'
     List<Task> findByStatus(String status);
 
+    List<Task> findByUserId(Long userId);
+    List<Task> findByUserIdAndStatus(Long userId, String status);
+
     // findByTitleContainingIgnoreCase("spring")
     // → SELECT * FROM tasks WHERE LOWER(title) LIKE '%spring%'
     List<Task> findByTitleContainingIgnoreCase(String keyword);
